@@ -108,3 +108,9 @@ int main(void) {
 	return 0;
 }
 ```
+
+If we take the example analyzed above as input, then at the program output we get:
+
+```
+Num of found words: 5
+```
