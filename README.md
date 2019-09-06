@@ -19,3 +19,23 @@ A <b>Finite State Machine</b> is a model of computation based on a hypothetical 
 <p align="center">
   <img src="img/moore_machine.jpg">
 </p>
+
+---
+
+## Problem
+
+Find in one round of each symbol how many times a word from the alphabet <b>Q</b> is repeated in the input set <b>∑</b>.
+
+I used the <i>Moore Machine</i> to solve this problem.
+
+---
+
+## Example
+
+Imagine we have an alphabet of characters <i><b>Q</b> = {a, b}</i> and word we are looking for: `abb`. We will search for this word in an arbitrary set of input data. But for example, let's take it: `ababbabbaabbabbabaaabba`.
+
+Let's build a <i>Moore diagram</i> for this example:
+
+<p align="center">
+  <img src="img/abb.jpg">
+</p>
