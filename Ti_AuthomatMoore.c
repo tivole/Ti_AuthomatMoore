@@ -55,16 +55,16 @@ int main(void) {
 				fprintf(Program, "%s", "\t\t");
 				if(i != 0) fprintf(Program, "%s", "else ");
 				if(i < Length_Of_Word - 1) {
-					fprintf(Program, "%s%d%s%c%s", "if(cond == " , i , " && letter == '" , word[i] , "') cond++; // Simple moment\n");
+					fprintf(Program, "%s%d%s%c%s", "if(cond == " , i , " && letter == '" , word[i] , "') cond++;\n");
 				}else {
 					// The last character
-					fprintf(Program, "%s%d%s%c%s%d%s", "if(cond == " , i , " && letter == '", word[i] , "') { cond = ", Max_i , "; Num_Of_Found_Words++; } // Last moment\n" );
+					fprintf(Program, "%s%d%s%c%s%d%s", "if(cond == " , i , " && letter == '", word[i] , "') { cond = ", Max_i , "; Num_Of_Found_Words++; }\n" );
 				}
 			}else {
 				if(Max_i != 0) {
 					fprintf(Program, "%s", "\t\t");
 					if(i != 0) fprintf(Program, "%s", "else ");
-					fprintf(Program, "%s%d%s%c%s%d%s", "if(cond == " , i , " && letter == '", alphabet[j] , "') cond = ", Max_i , "; // * Important moment\n");
+					fprintf(Program, "%s%d%s%c%s%d%s", "if(cond == " , i , " && letter == '", alphabet[j] , "') cond = ", Max_i , ";\n");
 				}
 			}
 		}
